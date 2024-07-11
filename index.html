@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 
 <html>
-							{% from 'bootstrap5/form.html' import render_form %}
 
 	<head>
 		<title>Noah's Portfolio</title>
@@ -39,7 +38,7 @@
 				<div class="bottom">
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="{{url_for('linkedin')}}">
+							<li><a href="http://linkedin.com/in/noah-malqui-b87b082a8">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
   <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
 </svg></a>
@@ -67,7 +66,7 @@
 
 							<footer>
 								<div class="d-grid gap-2">
-									<button type="button" class="btn btn-dark btn-lg col-6 mx-auto"><a href="{{url_for('linkedin')}}">LinkedIn</a></button>
+									<button type="button" class="btn btn-dark btn-lg col-6 mx-auto"><a href="http://linkedin.com/in/noah-malqui-b87b082a8">LinkedIn</a></button>
 									<button type="button" class="btn btn-dark btn-lg col-6 mx-auto"><a href="https://github.com/malquinoah/">GitHub</a></button>
 								</div>
 							</footer>
@@ -179,44 +178,7 @@ As a Training Analyst at FPL, I've honed skills in instructional design, process
 								<h2 style="color: white">Contact</h2>
 							</header>
 
-							<p style="color: white">If you'd like to contact me, please fill out the boxes below or send me a message on <a href="{{url_for('linkedin')}}">LinkedIn<a/></p>
-							<style>
-							  form label, form input, form textarea {
-								color: white;
-							  }
-							  .btn-primary {
-								background-color: #202226 !important;
-								border-color: none !important;
-							  }
-							  form input[type="submit"] {
-								display: block !important;
-								width: 50% !important;
-								margin-left: auto !important;
-								margin-right: auto !important;
-							  }
-							  .btn-custom {
-							    background-color: #202226;
-							    border-color: #202226;
-							    color: white;  /* Ensure text is visible on dark background */
-							  }
-							  .btn-custom:hover {
-								background-color: #2c2e33;  /* Slightly lighter shade for hover effect */
-								border-color: #2c2e33;
-							  }
-							</style>
-
-							{{ render_form(form) }}
-							{{ ckeditor.load() }}
- 							{{ ckeditor.config(name='body') }}
-							{% with messages = get_flashed_messages() %}
-								{% if messages %}
-									<ul class=flashes>
-									{% for message in messages %}
-									  <li>{{ message }}</li>
-									{% endfor %}
-									</ul>
-								  {% endif %}
-							{% endwith %}
+							<p style="color: white">If you'd like to contact me, please email me by clicking <a href="mailto: malquinoah@icloud.com">here</a> or send me a message on <a href="http://linkedin.com/in/noah-malqui-b87b082a8">LinkedIn<a/></p>
 
 						</div>
 					</section>
